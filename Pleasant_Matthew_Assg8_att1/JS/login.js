@@ -8,6 +8,7 @@ function validateForm() {
 	var password = document.getElementById('password').value;
 	
 	if ( (( email === "admin@titanmusicstore.com" ) && ( password === "LogMeIn" )) || ((email === "matthewpleasant@gmail.com") && (password === "password")) ) {
+		localStorage.setItem("user", "loggedin");
 		return true;
 	} else {
 		alert('Your username or password is incorrect. Please try again.');

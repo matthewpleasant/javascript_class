@@ -33,12 +33,36 @@
 <p class="text"><span class="text1"><a target="_blank" href="">Shopping Cart</a>&nbsp;</span>  <span class="text2">&nbsp;now in your cart 0 items&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>  <a target="_blank" href="">   Advanced Search </a> &nbsp; | <a target="_blank" href=""> Shipping &amp; Returns&nbsp;</a>| <a target="_blank" href="">   Create an Account  &nbsp;  </a>  |  <a target="_blank" href="login.html"> Log In</a></p>
 </div>
 </div>    <div class="clear"></div>
-<div class="nav"><div class="nav1"><span class="text3"><a target="_blank" href="">Homepage</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">What's new?</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Specials</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Contact us</a></span></div><div class="nav2">
-<div class="imgs"> <a target="_blank" href=""><img src="img/04.png" alt="img" /></a></div></div> <div class="form"><form method="post" action="handler.php">
-   <input name="textfield" type="text" class="colortext"  value=" Search entire store..." /></form></div></div>
+<div class="nav"><div class="nav1"><span class="text3"><a target="_blank" href="">Homepage</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">What's new?</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Specials</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="">Contact us</a></span>
+
+
+		<!-- search function starts -->
+		<div class="form">
+			<form id="searchForm">			
+				<input type="text" class="colortext" id="term" placeholder="Search entire store..." />
+				<input type="click" value="Search">
+			</form>
+		</div>
+		<!-- search function ends -->
+</div>
 
 <div id="style">
-<h1>Welcome to your account</h1>
+<form action="myaccount.html" method="POST" id="loginForm" novalidate>
+	<fieldset>
+		<legend>Login</legend>
+		<div><label for="email">Email Address</label>
+			<input type="email" name="email"
+			id="email" required></div>
+		
+		<div><label for="password">Password</label>
+			<input type="password" name="password"
+			id="password" required></div>
+			
+		<div><label for="submit"></label>
+			<input type="submit" value="Login &rarr;"
+			id="submit"></div>	
+	</fieldset>
+</form>
 </div>
 
 <div class="footer">
@@ -49,8 +73,6 @@
 <div class="v"><p class="text6">Copyright © 2010 Music Store &nbsp;  <a target="_blank" href="">  Privacy Notice </a>   &nbsp;| &nbsp;   <a target="_blank" href=""> Conditions of Use</a></p></div>
 </div>
 </div></div>
-
-
-
+<script src="JS/login.js"></script>
 </body>
 </html>
